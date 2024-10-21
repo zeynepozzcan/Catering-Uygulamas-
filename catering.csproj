@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E626996-3950-4F31-BD19-DD31F5BEBC77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>catering</RootNamespace>
+    <AssemblyName>catering</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Excalibur\Desktop\catering\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>87056E8B7159786392E3D8726654D55ADDBD5866</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>catering_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cateringDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cateringDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cateringDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cateringDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cateringDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cateringDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cateringDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cateringDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cateringDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cateringDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baslangic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baslangic.Designer.cs">
+      <DependentUpon>Baslangic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tatli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tatli.Designer.cs">
+      <DependentUpon>Tatli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaYemek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaYemek.Designer.cs">
+      <DependentUpon>AnaYemek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Icecekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Icecekler.Designer.cs">
+      <DependentUpon>Icecekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Baslangic.resx">
+      <DependentUpon>Baslangic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tatli.resx">
+      <DependentUpon>Tatli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaYemek.resx">
+      <DependentUpon>AnaYemek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icecekler.resx">
+      <DependentUpon>Icecekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="cateringDataSet.xsc">
+      <DependentUpon>cateringDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cateringDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cateringDataSet.xss">
+      <DependentUpon>cateringDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet1.xsc">
+      <DependentUpon>cateringDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cateringDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cateringDataSet1.xss">
+      <DependentUpon>cateringDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet2.xsc">
+      <DependentUpon>cateringDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cateringDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cateringDataSet2.xss">
+      <DependentUpon>cateringDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet3.xsc">
+      <DependentUpon>cateringDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cateringDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cateringDataSet3.xss">
+      <DependentUpon>cateringDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet4.xsc">
+      <DependentUpon>cateringDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cateringDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cateringDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cateringDataSet4.xss">
+      <DependentUpon>cateringDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="catering_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-cook-logo-shape-meal-eating-icon-symbol-restaurant-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-logo-yellow-font-recipe-logo-art-yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-cook-logo-shape-meal-eating-icon-symbol-restaurant-thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-red-catering-service-logo-isolated-on-white-concept-of-sign-for-buffet-or-cafe-and-restaurant-755267308.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-06 saat 00.07.18_497c7ec6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-06 saat 00.09.46_839fd9e4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-06 saat 00.11.16_f38741e2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-06 saat 00.13.00_0a4abc96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-08 saat 19.38.05_34994749.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-08 saat 19.46.14_110a8194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-icon-cursor-vector-modern-260nw-1442829680.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3A7BE0DC-E6B1-48C5-8FF2-EA69DE550057-1800x810.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yapay-cicek-sakayik-dal-koyu-pembe-70-cm-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4b98bb56614e9059c28e512f1573f5c5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 21.07.52_bbc1006a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sepet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 21.30.19_77ccb016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 21.30.19_77ccb0161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 21.42.41_22a25cd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kırmızı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 21.42.41_22a25cd11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proje.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proje1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proje2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.07_6d43b0ac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f569.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.15.20_9e1ebdee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.07_6d43b0ac1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.07_6d43b0ac2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.09.55_5bcaa9d8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f5691.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f5692.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f5693.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.07_6d43b0ac3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f5694.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.15.20_9e1ebdee1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.15.20_9e1ebdee2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f5695.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.01.35_a067f5696.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.09.55_5bcaa9d81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp_Görsel_2023-12-15_saat_22.14.09_80b1ee31-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp_Görsel_2023-12-15_saat_22.14.23_bd465b5d-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb910.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deneme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb912.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb913.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb914.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb915.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzAa-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzAa-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dribbble_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dribbble_small-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aşçı3d-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\218.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baloncuk2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb916.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-15 saat 22.08.05_f62bdeb917.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şefler-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şefler-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2023-12-17_002213-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2023-12-17_002140-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2023-12-17_002737-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2023-12-17_002959-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_4c775e1e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3402.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3403.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3404.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3405.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3406.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3408.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd3409.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd34010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd34011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd34012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.40.14_f6aa2105a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcı-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-button-user-avatar-button-white-vector-icons-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\99-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd34013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2023-12-17_002959-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2023-12-17_002959-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Görsel 2023-12-26 saat 17.26.02_e8dfd34014.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
